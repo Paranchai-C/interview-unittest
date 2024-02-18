@@ -1,0 +1,22 @@
+1.ติดตั้ง node.js กับ typescript
+2.สร้าง npm 
+	ใช้คำสั่ง npm init -y
+3.เพิ่ม typescript ลงใน depency 
+	ใช้คำสั่ง npm install typescript --save-dev
+4.สร้างตัวตั้งค่า typescript 
+	ใช้คำสั่ง tsc --init
+5.เพิ่มตัว framework ที่ใช้ทดสอบ
+	ใช้คำสั่ง npm install mocha jest @types/mocha @types/jest --save-dev
+6.เพิ่ม depency ts-jest เพื่อให้ทดสอบ ts file ได้
+	ใช้คำสั่ง npm install ts-jest
+7.สร้างโฟลเดอร์ src กับ test โดย
+src เก็บไฟล์ function : merge.ts
+test เก็บไฟล์ตัวทดสอบ : merge.test.ts
+8.เพิ่มใน package.json ดังนี้
+"scripts": {
+    "test": "jest"
+  },
+"jest": {
+    "preset": "ts-jest"
+  }
+9.ถ้าทำการทดสอบพิมพ์ npm test
